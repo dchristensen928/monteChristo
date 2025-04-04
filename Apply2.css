@@ -1,0 +1,65 @@
+/* Base Styles */
+body {
+  font-family: 'Georgia', serif; /* Elegant serif font */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background */
+  color: #333; /* Dark text for readability */
+}
+
+h1, h2, h3 {
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  color: #2c3e50; /* Dark blue-gray */
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+form p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1em;
+  font-family: 'Georgia', serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 8px; /* Space between radio button and label */
+}
+
+/* Button Styling */
+button[type="submit"] {
+  background-color: #3498db; /* Blue color */
+  color: white;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Spacing and layout adjustments */
+div {
+  margin-bottom: 15px;
+}

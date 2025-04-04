@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for the Internship</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <h1>Internship Application</h1>
+    
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+
+
+<fieldset>
+    <legend>Preferred Contact Method</legend>
+    
+    <label for="contact-method">How should we contact you?</label>
+    <select id="contact-method" name="contact-method" required>
+        <option value="email">Email</option>
+        <option value="phone">Phone Call</option>
+        <option value="text">Text Message</option>
+    </select>
+</fieldset>
+<fieldset>
+  <legend>Please Answer the Following:</legend>
+    <p>Are you a practicing catholic?</p>
+       <label for="catholic">
+        <input type="radio" id="catholic" name="question1" value="yes">
+          yes
+       </label>
+      </div>
+  <label><input type="radio" name="question1" value="no">no</label>
+  </div>
+
+  <p>  Are you taking any prescription medications?</p>
+  <label for="medication"><input type="radio" id="medication" name="q2" value="yes">yes</label>
+  <label for="medication"><input type="radio"id="medication" name="q2" value="no">no</label>
+  <p> Do you have any severe food allergies?</p>
+  <label for="food"><input type="radio" id="food" name="q3" value="yes">yes</label>
+  <label for="food"><input type="radio" id="food" name="q3" value="no">no</label>
+</fieldset>
+        <fieldset>
+            <legend>Introduce Yourself</legend>
+            <label for="experience"> Please decribe breifly why you are interested in joining the internship program.</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea>
+        </fieldset>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>

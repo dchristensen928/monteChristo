@@ -1,0 +1,10 @@
+body {
+    background-image: url(IMG_2479.heic);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: brown;
+}

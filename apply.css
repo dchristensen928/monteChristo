@@ -1,0 +1,73 @@
+/* Form Styles */
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+fieldset {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f5deb3; /* Wheat color */
+}
+
+label {
+
+  div {
+    margin-bottom: 8px;
+  }
+
+    
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #d4a373; /* Muted leather tan */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #d4a373;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #b3835c;
+}
+
+
+  input[type="radio"] {
+    display: inline-block; /* Ensures radio buttons stay inline */
+  }
+
+  label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0; /* Remove extra margins if any */
+    padding: 0; /* Remove extra padding if any */
+  }

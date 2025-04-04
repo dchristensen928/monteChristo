@@ -1,0 +1,66 @@
+/* General Styling */
+body {
+    font-family: 'Georgia', serif;
+    background: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Seasonal Sections */
+.seasons {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.season {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.season:nth-child(even) {
+    flex-direction: row-reverse; /* Alternates image position */
+}
+
+
+/* Text Section */
+.text {
+    width: 60%;
+    padding: 0 20px;
+}
+
+.text h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #444;
+}
+
+.text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .season {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    
+    .season img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .text {
+        width: 100%;
+    }
+}
