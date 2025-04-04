@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    background: #f8f8f8;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #3d3d3d;
+}
+
+
+/* Introductory Article */
+.intro {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.2rem;
+    color: #555;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Fieldset Section */
+.skills-to-learn, .tools-youll-use, .tannery {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.skills-to-learn h2, .tools-youll-use h2, .tannery h2 {
+    font-size: 1.6rem;
+    color: #7a5c3d;
+    margin-bottom: 15px;
+}
+
+
+/* Unordered List Styling */
+.skills-to-learn ul, .tools-youll-use ul, .tannery ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-to-learn li, .tools-youll-use li, .tannery li {
+    padding: 10px;
+    background: #7a5c3d;
+    color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Paragraph Styling */
+.skills-to-learn p, .tools-youll-use p, .tannery p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .intro, .skills-to-learn, .tools-youll-use {
+        max-width: 90%;
+    }
+
+    .skills-to-learn li, .tools-youll-use li {
+        font-size: 1.1rem;
+    }
+}
+/* General Styling */
+body {
+    font-family: Georgia, serif; /* Match the font family from "Expect to Learn" page */
+    background-color: #f8f8f8; /* Light, neutral background */
+    color: #3e3e3e; /* Darker text color for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Gallery Section */
+#skills-gallery {
+    background: #ffff; /* Soft tan background to complement rustic feel */
+    padding: 50px 10px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    color: #f8f8f8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#skills-gallery h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #6a4e23; /* Dark brown color for headings */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Georgia, serif; /* Ensure consistent font */
+}
+
+/* Gallery container (grid layout) */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* Gallery items (images and captions) */
+.gallery-item {
+    position: relative;
+    border: 2px solid #6a4e23; /* Dark brown border for a natural, rustic look */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    transition: transform 0.3s ease-in-out;
+    flex-direction: column;
+}
+
+/* Image styles */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #f8f8f8;
+}
+
+/* Caption styles */
+figcaption {
+    background: white(0, 0, 0, 0.6); /* Dark background for text */
+    color: #000000; /* Light tan color for readability */
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    transition: none;
+}
+
+/* Hover effect */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover figcaption {
+    opacity: 1;
+}
