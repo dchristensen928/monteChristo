@@ -1,13 +1,15 @@
-/* Base styles */
+/* learn.css */
+
+/* General Styling */
 body {
     font-family: 'Georgia', serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    background: #f8f8f8;
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
+/* Header Styling */
 header {
     background-color: #8B4513; /* Saddle brown */
     color: #fff;
@@ -20,6 +22,11 @@ header h1 {
     margin: 0;
     font-size: 2.5em;
     font-weight: bold;
+}
+
+/* Text Section */
+h1, h2 {
+    text-align: center;
 }
 
 h2 {
@@ -37,25 +44,38 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Container Styling */
 .container {
+    max-width: 800px;
     width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     padding: 20px;
 }
 
-/* Section styles */
+/* Section Styling */
 .intro, .skills-to-learn, .tools-youll-use, .tannery {
-    background-color: #fff;
-    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #8B4513; /* Saddle brown */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.intro:nth-child(even), .skills-to-learn:nth-child(even), .tools-youll-use:nth-child(even), .tannery:nth-child(even) {
+    flex-direction: row-reverse; /* Alternates image position if there are images */
 }
 
 .intro p, .skills-to-learn p, .tools-youll-use p, .tannery p {
     margin: 0 0 10px;
+    font-size: 1rem;
+    color: #555;
 }
 
 ul {
@@ -119,17 +139,32 @@ li {
     }
 }
 
-/* Additional styles */
-.skills-to-learn, .tools-youll-use, .tannery {
-    border-left: 4px solid #8B4513; /* Saddle brown */
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
 }
 
-.skills-to-learn h2, .tools-youll-use h2, .tannery h2 {
-    margin-top: 0;
-    padding-left: 10px;
-    border-left: 4px solid #D2691E; /* Chocolate */
+@media (max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+
+    .intro, .skills-to-learn, .tools-youll-use, .tannery {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .intro img, .skills-to-learn img, .tools-youll-use img, .tannery img {
+        width: 100%;
+        margin-bottom: 15px;
+        max-height: none; /* Remove max-height restriction for smaller screens */
+    }
 }
 
-.skills-to-learn ul, .tools-youll-use ul, .tannery ul {
-    padding-left: 20px;
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9em;
+    }
 }
