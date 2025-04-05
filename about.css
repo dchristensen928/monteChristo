@@ -1,15 +1,15 @@
 /* about.css */
 
-/* Base styles */
+/* General Styling */
 body {
     font-family: 'Georgia', serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    background: #f8f8f8;
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
+/* Header Styling */
 header {
     background-color: #8B4513; /* Saddle brown */
     color: #fff;
@@ -24,6 +24,7 @@ header h1 {
     font-weight: bold;
 }
 
+/* Text Section */
 h1, h2 {
     text-align: center;
 }
@@ -43,25 +44,38 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Container Styling */
 .container {
+    max-width: 800px;
     width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     padding: 20px;
 }
 
-/* Section styles */
+/* Section Styling */
 section {
-    background-color: #fff;
-    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #8B4513; /* Saddle brown */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+section:nth-child(even) {
+    flex-direction: row-reverse; /* Alternates image position if there are images */
 }
 
 section p {
     margin: 0 0 10px;
+    font-size: 1rem;
+    color: #555;
 }
 
 ul {
@@ -73,7 +87,7 @@ li {
     margin-bottom: 10px;
 }
 
-/* Responsive styles */
+/* Responsive Design */
 @media (max-width: 1200px) {
     .container {
         width: 95%;
@@ -84,31 +98,21 @@ li {
     body {
         font-size: 1em;
     }
+
+    section {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    section img {
+        width: 100%;
+        margin-bottom: 15px;
+        max-height: none; /* Remove max-height restriction for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
     body {
         font-size: 0.9em;
-    }
-}
-
-/* Desktop-specific styles */
-@media (min-width: 1201px) {
-    .container {
-        width: 80%;
-        padding: 40px;
-    }
-
-    header h1 {
-        font-size: 3em;
-    }
-
-    section {
-        padding: 30px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
-
-    section p {
-        font-size: 1.1em;
     }
 }
