@@ -95,13 +95,16 @@ a:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
     overflow: hidden;
+    text-align: center; /* Center text */
 }
 
-.intro p, .skills-to-learn p, .tools-youll-use p, .tannery p {
-    margin: 0 0 10px;
+.intro p, .skills-to-learn p, .tools-youll-use p, .tannery p,
+.intro ul, .skills-to-learn ul, .tools-youll-use ul, .tannery ul {
+    margin: 0 auto 10px;
     font-size: 1rem;
     color: #555;
-    text-align: justify; /* Ensures text is laid out neatly */
+    display: inline-block; /* Center block */
+    text-align: left; /* Ensure text within block is left-aligned */
 }
 
 ul {
