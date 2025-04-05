@@ -67,22 +67,28 @@ li {
 
 /* Gallery styles */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .gallery-item {
-    flex: 1 1 calc(33.333% - 30px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
 }
 
 .gallery-item img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .gallery-item figcaption {
@@ -92,48 +98,15 @@ li {
     color: #663399;
 }
 
-/* Responsive styles */
+/* Responsive styles for gallery */
 @media (max-width: 768px) {
-    .gallery-item {
-        flex: 1 1 calc(50% - 15px);
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 1.8em;
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
-
-    .gallery-item {
-        flex: 1 1 100%;
-    }
-}
-
-/* Additional styles */
-.skills-to-learn, .tools-youll-use, .tannery {
-    border-left: 4px solid #663399;
-}
-
-.skills-to-learn h2, .tools-youll-use h2, .tannery h2 {
-    margin-top: 0;
-    padding-left: 10px;
-    border-left: 4px solid #cc9966;
-}
-
-.skills-to-learn ul, .tools-youll-use ul, .tannery ul {
-    padding-left: 20px;
-}
-
-.skills-to-learn li, .tools-youll-use li, .tannery li {
-    position: relative;
-    padding-left: 20px;
-}
-
-.skills-to-learn li:before, .tools-youll-use li:before, .tannery li:before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #cc9966;
-    font-size: 1.2em;
-    line-height: 1.4;
 }
