@@ -1,4 +1,8 @@
 /* General Styling */
+h1  {
+    text-align:  center;
+}
+
 body {
     font-family: 'Georgia', serif;
     background: #f8f8f8;
