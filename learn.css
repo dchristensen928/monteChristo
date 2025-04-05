@@ -1,15 +1,15 @@
-/* about.css */
+/* learn.css */
 
-/* Base styles */
+/* General Styling */
 body {
     font-family: 'Georgia', serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    background: #f8f8f8;
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
+/* Header Styling */
 header {
     background-color: #8B4513; /* Saddle brown */
     color: #fff;
@@ -24,6 +24,7 @@ header h1 {
     font-weight: bold;
 }
 
+/* Text Section */
 h1, h2 {
     text-align: center;
 }
@@ -43,25 +44,38 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Container Styling */
 .container {
-    width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     padding: 20px;
 }
 
-/* Section styles */
-section {
-    background-color: #fff;
-    margin: 20px 0;
+/* Section Styling */
+.intro, .skills-to-learn, .tools-youll-use, .tannery {
+    display: flex;
+    align-items: center;
+    background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #8B4513; /* Saddle brown */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
-section p {
+.intro:nth-child(even), .skills-to-learn:nth-child(even), .tools-youll-use:nth-child(even), .tannery:nth-child(even) {
+    flex-direction: row-reverse; /* Alternates image position if there are images */
+}
+
+.intro p, .skills-to-learn p, .tools-youll-use p, .tannery p {
     margin: 0 0 10px;
+    font-size: 1rem;
+    color: #555;
 }
 
 ul {
@@ -73,7 +87,63 @@ li {
     margin-bottom: 10px;
 }
 
-/* Responsive styles */
+/* Gallery styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.gallery-item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Ensure images are not too wide */
+    max-height: 200px; /* Ensure images are not too tall */
+    display: block;
+    object-fit: cover;
+    margin: auto; /* Center the images */
+}
+
+.gallery-item figcaption {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #8B4513; /* Saddle brown */
+}
+
+/* Responsive styles for gallery */
+@media (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive Design */
 @media (max-width: 1200px) {
     .container {
         width: 95%;
@@ -84,10 +154,47 @@ li {
     body {
         font-size: 1em;
     }
+
+    .intro, .skills-to-learn, .tools-youll-use, .tannery {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .intro img, .skills-to-learn img, .tools-youll-use img, .tannery img {
+        width: 100%;
+        margin-bottom: 15px;
+        max-height: none; /* Remove max-height restriction for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
     body {
         font-size: 0.9em;
+    }
+}
+
+/* Desktop-specific Styles */
+@media (min-width: 1201px) {
+    .container {
+        width: 80%;
+        padding: 40px;
+    }
+
+    .intro, .skills-to-learn, .tools-youll-use, .tannery {
+        padding: 30px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro p, .skills-to-learn p, .tools-youll-use p, .tannery p {
+        font-size: 1.1em;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); /* Ensure gallery items are in two rows */
+    }
+
+    .gallery-item img {
+        max-height: 200px; /* Ensure images are appropriately sized */
+        object-fit: cover;
     }
 }
