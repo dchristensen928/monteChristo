@@ -5,6 +5,7 @@ body {
     color: #333;
     text-align: center;
     padding: 40px;
+    margin: 0;
 }
 
 /* Header */
@@ -77,6 +78,7 @@ h1 {
     }
 
     .intro, .skills-to-learn, .tools-youll-use {
+    .intro, .skills-to-learn, .tools-youll-use, .tannery {
         max-width: 90%;
     }
 
@@ -84,6 +86,7 @@ h1 {
         font-size: 1.1rem;
     }
 }
+
 /* General Styling */
 body {
     font-family: Georgia, serif; /* Match the font family from "Expect to Learn" page */
@@ -162,4 +165,23 @@ figcaption {
 
 .gallery-item:hover figcaption {
     opacity: 1;
+}
+
+/* Larger Screens */
+@media (min-width: 769px) {
+    .intro, .skills-to-learn, .tools-youll-use, .tannery {
+        max-width: 80%;
+    }
+
+    #skills-gallery {
+        padding: 60px 20px;
+    }
+
+    .gallery-item {
+        border-width: 3px;
+    }
+
+    .skills-to-learn li, .tools-youll-use li, .tannery li {
+        font-size: 1.2rem;
+    }
 }
