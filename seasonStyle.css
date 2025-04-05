@@ -10,7 +10,7 @@ body {
 /* Seasonal Sections */
 .seasons {
     max-width: 800px;
-    width: 90%; /* Changed from max-width to width */
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,9 @@ body {
 /* Image Section */
 .season img {
     max-width: 100%;
+    width: auto; /* Ensure the width does not exceed the container */
     height: auto;
+    max-height: 300px; /* Set a maximum height to prevent the image from taking up too much space */
     border-radius: 8px;
 }
 
@@ -66,28 +68,7 @@ body {
     .season img {
         width: 100%;
         margin-bottom: 15px;
+        max-height: none; /* Remove max-height restriction for smaller screens */
     }
 
-    .text {
-        width: 100%;
-    }
-}
-
-/* Larger Screens */
-@media (min-width: 769px) {
-    .seasons {
-        max-width: 80%;
-    }
-
-    .season {
-        padding: 30px;
-    }
-
-    .text h2 {
-        font-size: 2rem;
-    }
-
-    .text p {
-        font-size: 1.2rem;
-    }
-}
+* ▋
