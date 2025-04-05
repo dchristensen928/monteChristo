@@ -135,7 +135,7 @@ li {
 .gallery-item img {
     width: 100%;
     height: auto;
-    max-width: 250px; /* Ensure images are not too wide */
+    max-width: 100%; /* Ensure images are not too wide */
     max-height: 200px; /* Ensure images are not too tall */
     display: block;
     object-fit: cover;
