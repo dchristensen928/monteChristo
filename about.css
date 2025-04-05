@@ -19,6 +19,7 @@ header {
 }
 
 header h1 {
+    text-align: center;
     margin: 0;
     font-size: 2.5em;
     font-weight: bold;
@@ -29,6 +30,7 @@ h1, h2 {
 }
 
 h2 {
+    text-align: center;
     color: #8B4513; /* Saddle brown */
     border-bottom: 2px solid #D2691E; /* Chocolate */
     padding-bottom: 5px;
