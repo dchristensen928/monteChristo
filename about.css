@@ -66,4 +66,24 @@ ul {
 }
 
 li {
-    margin-bottom: 10px* ▋
+    margin-bottom: 10px* ;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9em;
+    }
+}
