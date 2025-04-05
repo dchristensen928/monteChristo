@@ -1,91 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Skills</title>
-    <link rel="stylesheet" href="learn.css">
-</head>
-<body>
-    <header>
-        <h1>Skills You'll Learn</h1>
-    </header>
+/* Base styles */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
 
-    <article class="intro">
-        <p>Living on a working ranch and homestead for a year will teach you many invaluable <a href="#skills-gallery">skills</a> that can only be learned through practice. You will have ample opportunity to...</p>
-    </article>
+header {
+    background-color: #8B4513; /* Saddle brown */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #D2691E; /* Chocolate */
+}
 
-    <section class="skills-to-learn">
-        <h2>Ranch Skills</h2>
-        <p>Some of the ranch skills you'll learn include:</p>
-        <ul>
-            <li>Fence construction</li>
-            <li>Irrigation and hay-making</li>
-            <li>Milking and dairy production</li>
-            <li>Butchering of whole beef, sheep, pork, and wild game</li>
-            <li>Western horsemanship</li>
-            <li>Livestock nutrition and husbandry</li>
-        </ul>
-    </section>
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
 
-    <section class="tools-youll-use">
-        <h2>Outdoorsmanship</h2>
-        <p>In addition to learning essential ranch and homestead skills, the intern can also expect to learn and practice the following outdoor sports:</p>
-        <ul>
-            <li>Fly fishing and fly tying</li>
-            <li>Traditional archery</li>
-            <li>Rifle safety and marksmanship</li>
-            <li>Hiking and land navigation</li>
-        </ul>
-    </section>
+h2 {
+    color: #8B4513; /* Saddle brown */
+    border-bottom: 2px solid #D2691E; /* Chocolate */
+    padding-bottom: 5px;
+}
 
-    <section class="tannery">
-        <h2>Tannery</h2>
-        <p>You will also find yourself helping at the small natural tannery located on the ranch. Interns will get to tan and take home their own:</p>
-        <ul>
-            <li>Sheep Pelt</li>
-            <li>Sheep Leather</li>
-            <li>Traditional Buckskin</li>
-        </ul>
-    </section>
+a {
+    color: #D2691E; /* Chocolate */
+    text-decoration: none;
+}
 
-    <!-- Gallery Section -->
-    <section id="skills-gallery">
-        <h2>Skills</h2>
-        <div class="gallery">
-            <figure class="gallery-item">
-                <img src="summerFence.JPG" alt="Skill 1">
-                <figcaption>Fence Building</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="hay.png" alt="Skill 2">
-                <figcaption>Haying</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="horsemanship.JPG" alt="Skill 3">
-                <figcaption>Western Horsemanship</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="fly fishing.jpg" alt="trout">
-                <figcaption>Fly Fishing</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="bisonHide.jpg" alt="bison robe">
-                <figcaption>Traditional Tanning</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="summerBranding.heic" alt="calf being branded">
-                <figcaption>Animal Husbandry</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="fallBacon.JPG" alt="bacon">
-                <figcaption>Home Butchering & Meat Processing</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="cool.heic" alt="cool kids">
-                <figcaption>How To Be Cool</figcaption>
-            </figure>
-        </div>
-    </section>
-</body>
-</html>
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section styles */
+.intro, .skills-to-learn, .tools-youll-use, .tannery {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #8B4513; /* Saddle brown */
+}
+
+.intro p, .skills-to-learn p, .tools-youll-use p, .tannery p {
+    margin: 0 0 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Gallery styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.gallery-item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item figcaption {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #8B4513; /* Saddle brown */
+}
+
+/* Responsive styles for gallery */
+@media (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Additional styles */
+.skills-to-learn, .tools-youll-use, .tannery {
+    border-left: 4px solid #8B4513; /* Saddle brown */
+}
+
+.skills-to-learn h2, .tools-youll-use h2, .tannery h2 {
+    margin-top: 0;
+    padding-left: 10px;
+    border-left: 4px solid #D2691E; /* Chocolate */
+}
+
+.skills-to-learn ul, .tools-youll-use ul, .tannery ul {
+    padding-left: 20px;
+}
