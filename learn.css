@@ -7,6 +7,38 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    margin: 0;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #8B4513; /* Saddle brown */
+    padding: 10px;
+    border-bottom: 4px solid #D2691E; /* Chocolate */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #D2691E; /* Chocolate */
 }
 
 /* Header Styling */
@@ -57,19 +89,11 @@ a:hover {
 
 /* Section Styling */
 .intro, .skills-to-learn, .tools-youll-use, .tannery {
-    display: flex;
-    align-items: center;
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    flex-wrap: wrap;
     margin: 20px 0;
-}
-
-.intro:nth-child(even), .skills-to-learn:nth-child(even), .tools-youll-use:nth-child(even), .tannery:nth-child(even) {
-    flex-direction: row-reverse; /* Alternates image position if there are images */
 }
 
 .intro p, .skills-to-learn p, .tools-youll-use p, .tannery p {
@@ -101,6 +125,7 @@ li {
     overflow: hidden;
     background-color: #fff;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .gallery-item:hover {
@@ -119,7 +144,6 @@ li {
 
 .gallery-item figcaption {
     padding: 10px;
-    text-align: center;
     font-weight: bold;
     color: #8B4513; /* Saddle brown */
 }
@@ -127,74 +151,18 @@ li {
 /* Responsive styles for gallery */
 @media (max-width: 1200px) {
     .gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .gallery {
         grid-template-columns: 1fr;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .container {
-        width: 95%;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 1em;
-    }
-
-    .intro, .skills-to-learn, .tools-youll-use, .tannery {
-        flex-direction: column !important;
-        text-align: center;
-    }
-
-    .intro img, .skills-to-learn img, .tools-youll-use img, .tannery img {
-        width: 100%;
-        margin-bottom: 15px;
-        max-height: none; /* Remove max-height restriction for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     body {
         font-size: 0.9em;
-    }
-}
-
-/* Desktop-specific Styles */
-@media (min-width: 1201px) {
-    .container {
-        width: 80%;
-        padding: 40px;
-    }
-
-    .intro, .skills-to-learn, .tools-youll-use, .tannery {
-        padding: 30px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .intro p, .skills-to-learn p, .tools-youll-use p, .tannery p {
-        font-size: 1.1em;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(4, 1fr); /* Ensure gallery items are in two rows */
-    }
-
-    .gallery-item img {
-        max-height: 200px; /* Ensure images are appropriately sized */
-        object-fit: cover;
     }
 }
