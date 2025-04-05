@@ -56,6 +56,24 @@ nav ul li a:hover {
     background-color: #D2691E; /* Chocolate */
 }
 
+/* Mobile Navigation Styling */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 20px;
+    }
+}
+
 /* Text Section */
 h1, h2 {
     text-align: center;
@@ -98,13 +116,18 @@ a:hover {
     text-align: center; /* Center text */
 }
 
-.intro p, .skills-to-learn p, .tools-youll-use p, .tannery p,
-.intro ul, .skills-to-learn ul, .tools-youll-use ul, .tannery ul {
+.intro p, .skills-to-learn p, .tools-youll-use p, .tannery p {
     margin: 0 auto 10px;
     font-size: 1rem;
     color: #555;
-    display: inline-block; /* Center block */
-    text-align: left; /* Ensure text within block is left-aligned */
+    display: block; /* Ensure p element is a block-level element */
+    text-align: center; /* Center text within p element */
+}
+
+.intro ul, .skills-to-learn ul, .tools-youll-use ul, .tannery ul {
+    margin: 0 auto;
+    display: inline-block; /* Ensure ul element is a block-level element */
+    text-align: left; /* Ensure text within ul element is left-aligned */
 }
 
 ul {
