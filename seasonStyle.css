@@ -10,7 +10,7 @@ body {
 /* Seasonal Sections */
 .seasons {
     max-width: 800px;
-    max-width: 90%;
+    width: 90%; /* Changed from max-width to width */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -32,10 +32,6 @@ body {
     flex-direction: row-reverse; /* Alternates image position */
 }
 
-
-/* Text Section */
-.text {
-    width: 60%;
 /* Text Section */
 .text {
     flex: 1;
@@ -66,15 +62,10 @@ body {
         flex-direction: column !important;
         text-align: center;
     }
-    
 
     .season img {
         width: 100%;
         margin-bottom: 15px;
-    }
-    
-    .text {
-        width: 100%;
     }
 
     .text {
