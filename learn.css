@@ -5,6 +5,7 @@ body {
     color: #333;
     text-align: center;
     padding: 40px;
+    margin: 0;
 }
 
 /* Header */
@@ -16,7 +17,6 @@ h1 {
     font-size: 2.2rem;
     color: #3d3d3d;
 }
-
 
 /* Introductory Article */
 .intro {
@@ -30,7 +30,6 @@ h1 {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Fieldset Section */
 .skills-to-learn, .tools-youll-use, .tannery {
     max-width: 500px;
@@ -41,13 +40,11 @@ h1 {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .skills-to-learn h2, .tools-youll-use h2, .tannery h2 {
     font-size: 1.6rem;
     color: #7a5c3d;
     margin-bottom: 15px;
 }
-
 
 /* Unordered List Styling */
 .skills-to-learn ul, .tools-youll-use ul, .tannery ul {
@@ -76,7 +73,7 @@ h1 {
         padding: 20px;
     }
 
-    .intro, .skills-to-learn, .tools-youll-use {
+    .intro, .skills-to-learn, .tools-youll-use, .tannery {
         max-width: 90%;
     }
 
@@ -84,6 +81,7 @@ h1 {
         font-size: 1.1rem;
     }
 }
+
 /* General Styling */
 body {
     font-family: Georgia, serif; /* Match the font family from "Expect to Learn" page */
@@ -162,4 +160,23 @@ figcaption {
 
 .gallery-item:hover figcaption {
     opacity: 1;
+}
+
+/* Larger Screens */
+@media (min-width: 769px) {
+    .intro, .skills-to-learn, .tools-youll-use, .tannery {
+        max-width: 80%;
+    }
+
+    #skills-gallery {
+        padding: 60px 20px;
+    }
+
+    .gallery-item {
+        border-width: 3px;
+    }
+
+    .skills-to-learn li, .tools-youll-use li, .tannery li {
+        font-size: 1.2rem;
+    }
 }
