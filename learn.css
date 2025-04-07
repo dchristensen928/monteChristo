@@ -135,6 +135,7 @@ a:hover {
 .intro ul li, .skills-to-learn ul li, .tools-youll-use ul li, .tannery ul li {
     margin-bottom: 10px;
     text-align: left; /* Ensure text within li is left-aligned */
+    display: list-item; /* Ensure bullets are displayed correctly */
 }
 
 /* Gallery styles */
