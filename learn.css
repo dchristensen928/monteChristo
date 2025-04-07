@@ -159,6 +159,10 @@ a:hover {
     object-fit: cover; /* Ensure images cover the container */
 }
 
+.gallery-item img[src="fly fishing.jpg"] {
+    object-position: center 30%; /* Adjust to center the face and fish */
+}
+
 .gallery-item figcaption {
     padding: 10px;
     font-weight: bold;
