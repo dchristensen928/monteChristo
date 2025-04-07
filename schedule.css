@@ -123,8 +123,8 @@ section h2 {
 }
 
 .schedule dt {
-    background-color: #8B4513; /* Saddle brown */
-    color: white;
+    background-color: #fff; /* white */
+    color: black;
 }
 
 .schedule dd {
@@ -142,7 +142,7 @@ section h2 {
 
 .weekly-highlights li {
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 /* Responsive Design */
