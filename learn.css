@@ -120,14 +120,16 @@ a:hover {
     margin: 0 auto 10px;
     font-size: 1rem;
     color: #555;
-    display: block; /* Ensure p element is a block-level element */
+    display: flex; /* Ensure p element is above ul element */
+    flex-direction: column;
     text-align: center; /* Center text within p element */
 }
 
 .intro ul, .skills-to-learn ul, .tools-youll-use ul, .tannery ul {
     margin: 0 auto;
-    display: inline-block; /* Ensure ul element is a block-level element */
-    text-align: left; /* Ensure text within ul element is left-aligned */
+    display: flex; /* Ensure ul element is a vertical element*/
+    flex-direction: column;
+    text-align: center; /* Ensure text within ul element is center-aligned */
 }
 
 ul {
