@@ -134,7 +134,7 @@ a:hover {
 
 ul li {
     margin-bottom: 10px;
-    text-align: left; /* Ensure text within li is left-aligned */
+    text-align: center; /* Ensure text within li is left-aligned */
     width: 100%; /* Ensure li takes full width */
 }
 
