@@ -131,18 +131,21 @@ section h2 {
     background-color: #f2f2f2;
 }
 
-/* List Styles */
+* List Styles */
 .weekly-highlights ul {
     list-style-type: disc;
-    padding-left: 20px;
-    text-align: center;
+    padding-left: 0; /* Remove default left padding */
     margin: 20px auto;
     max-width: 800px;
+    display: inline-block; /* Center the list */
+    text-align: left; /* Ensure text within li is left-aligned */
 }
 
 .weekly-highlights li {
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left; /* Ensure text within li is left-aligned */
+    display: list-item; /* Ensure bullets are displayed correctly */
+}
 }
 
 /* Responsive Design */
