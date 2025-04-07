@@ -113,7 +113,7 @@ a:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
     overflow: hidden;
-    text-align: center; /* Center text */
+    text-align: center; /* centrist text */
 }
 
 .intro p, .skills-to-learn p, .tools-youll-use p, .tannery p {
@@ -129,12 +129,12 @@ a:hover {
     padding-left: 0; /* Remove left padding */
     display: table;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 }
 
 ul li {
     margin-bottom: 10px;
-    text-align: center; /* Ensure text within li is left-aligned */
+    text-align: left /* Ensure text within li is left-aligned */
     diplay: table-row;
 }
 
