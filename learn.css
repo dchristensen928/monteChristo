@@ -127,12 +127,12 @@ a:hover {
 .intro ul, .skills-to-learn ul, .tools-youll-use ul, .tannery ul {
     margin: 0 auto;
     display: block; /* Ensure ul element is a block-level element */
-    text-align: center; /* Ensure text within ul element is center-aligned */
+    text-align: left; /* Ensure text within ul element is left-aligned */
 }
 
 ul {
     list-style-type: disc;
-    padding-left: 0; /* Remove left padding to center align */
+    padding-left: 20px; /* Add left padding for better alignment */
 }
 
 li {
