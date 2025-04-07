@@ -127,15 +127,22 @@ a:hover {
     margin: 0 auto;
     list-style-type: disc;
     padding-left: 0; /* Remove left padding */
-    display: table;
-    flex-direction: column;
-    align-items: left;
+    text-align: center;
 }
 
-ul li {
+/* Center the list items with their bullet points */
+.intro ul li, .skills-to-learn ul li, .tools-youll-use ul li, .tannery ul li {
     margin-bottom: 10px;
-    text-align: left /* Ensure text within li is left-aligned */
-    diplay: table-row;
+    text-align: center; /* Ensure text within li is centered */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the items */
+    align-items: center;
+}
+
+/* Ensure the bullet points are aligned with the text */
+.intro ul li::marker, .skills-to-learn ul li::marker, .tools-youll-use ul li::marker, .tannery ul li::marker {
+    text-align: center; /* Center the marker with the text */
+}
 }
 
 /* Gallery styles */
