@@ -4,23 +4,28 @@ body {
     background: #f8f8f8;
     color: #333;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
 }
 
 /* Header */
 header {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    background-color: #8B4513; /* Ensure consistent header background */
+    padding: 20px 0;
+    border-bottom: 4px solid #D2691E; /* Consistent border */
+    text-align: center;
 }
 
 h1 {
     font-size: 2.2rem;
-    color: #fff;
+    color: #fff; /* Ensure h1 color is white */
+    margin: 0;
 }
 
 /* Introductory Article */
 .intro {
     max-width: 600px;
-    margin: 0 auto 30px;
+    margin: 20 auto 30px;
     font-size: 1.2rem;
     color: #555;
     background: white;
@@ -32,7 +37,7 @@ h1 {
 /* Schedule Section */
 .schedule {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px auto;
     background: white;
     padding: 20px;
     border-radius: 8px;
