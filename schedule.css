@@ -132,6 +132,11 @@ section h2 {
 }
 
 * List Styles */
+.weekly-highligts {
+    display:flex;
+    justify-content: center;
+}
+
 .weekly-highlights ul {
     list-style-type: disc;
     padding-left: 0; /* Remove default left padding */
