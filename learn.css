@@ -127,7 +127,7 @@ a:hover {
     margin: 0 auto;
     list-style-type: disc;
     padding-left: 0; /* Remove left padding */
-    display: flex;
+    display: table;
     flex-direction: column;
     align-items: center;
 }
@@ -135,7 +135,7 @@ a:hover {
 ul li {
     margin-bottom: 10px;
     text-align: center; /* Ensure text within li is left-aligned */
-    width: 100%; /* Ensure li takes full width */
+    diplay: table-row;
 }
 
 /* Gallery styles */
