@@ -135,7 +135,7 @@ section h2 {
 .weekly-highlights ul {
     list-style-type: disc;
     padding-left: 20px;
-    text-align: left;
+    text-align: center;
     margin: 20px auto;
     max-width: 800px;
 }
